@@ -1,0 +1,68 @@
+body {
+  --container-lg: 1536px !important;
+  --hub-playground-width: 530px !important;
+}
+
+[data-color-mode="dark"] body {
+  --color-bg-page: #1c1c20 !important;
+  --color-bg-page-rgb: #1c1c20 !important;
+  --color-input-background: #000000 !important;
+  --color-input-border: #101014 !important;
+  --color-input-border-hover: #1c1c20 !important;
+}
+
+[data-color-mode="dark"] .rm-APILogInfo {
+  --APILogInfo-bg: #101014 !important;
+}
+
+[data-color-mode="dark"] .rm-APILogsTable {
+  --APILogsTable-bg: #101014 !important;
+}
+
+[data-color-mode="dark"] .InputGroup {
+  --APIAuthInputGroup-bg: #101014 !important;
+}
+
+[data-color-mode="dark"] .rm-PlaygroundRequest {
+  --APIRequest-bg: #101014 !important;
+}
+
+[data-color-mode="dark"]
+  .rm-PlaygroundRequest
+  .CodeSnippet
+  .CodeMirror-gutters {
+  background: #101014 !important;
+}
+
+[data-color-mode="dark"] .rm-PlaygroundResponse {
+  --APIResponse-bg: #101014 !important;
+}
+
+[data-color-mode="dark"] .rm-ParamContainer {
+  --ParamContainer-bg: #101014 !important;
+  --ParamContainer-bg-alt: #101014 !important;
+}
+
+[data-color-mode="dark"] .rm-APIResponseSchemaPicker {
+  --APIResponseSchemaPicker-bg: #101014 !important;
+  --APIResponseSchemaPicker-bg-alt: #101014 !important;
+  --APIResponseSchemaPicker-bg-hover: #1c1c20 !important;
+}
+
+[data-color-mode="dark"] .rm-Guides_loading {
+  --Spinner-element: #1c1c20 !important;
+  --Spinner-ring: #00e878 !important;
+}
+
+[data-color-mode="dark"] .content-body a {
+  color: #00e878 !important;
+}
+
+[data-color-mode="dark"] .rm-Sidebar a.active {
+  color: #ef4ea2 !important;
+  background: none !important;
+}
+
+[data-color-mode="dark"] #AppSearch {
+  --AlgoliaSearch-background: 16, 16, 20 !important;
+}
