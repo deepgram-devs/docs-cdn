@@ -11,6 +11,10 @@ body {
 Styling darkmode globals
 */
 
+[data-color-mode="dark"] {
+  color-scheme: dark !important;
+}
+
 [data-color-mode="dark"] body {
   --color-bg-page: #1c1c20 !important;
   --color-bg-page-rgb: #1c1c20 !important;
