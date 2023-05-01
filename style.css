@@ -20,6 +20,60 @@ Styling darkmode globals
 }
 
 /**
+Resets for "header-bottom" nav.
+*/
+
+[data-color-mode="dark"] .rm-Header-bottom-link.Button:active,
+[data-color-mode="dark"] .rm-Header-bottom-link.Button:focus-within {
+  border-color: transparent !important;
+}
+
+[data-color-mode="dark"] .rm-Header-bottom-link:active,
+[data-color-mode="dark"] .rm-Header-bottom-link {
+  border: 0px solid transparent !important;
+  border-bottom: solid 2px transparent !important;
+  border-radius: 0px !important;
+  background-color: transparent !important;
+  outline: 0px !important;
+  box-shadow: 2px 1000px 1px #101014 inset !important;
+  padding: 16px !important;
+}
+
+/**
+Styling for "header-bottom" nav.
+*/
+
+[data-color-mode="dark"] .rm-Container > nav {
+  padding-bottom: 0px;
+}
+
+[data-color-mode="dark"] a.rm-Header-bottom-link:active,
+[data-color-mode="dark"] a.rm-Header-bottom-link:hover,
+[data-color-mode="dark"] a.rm-Header-bottom-link.active {
+  background: linear-gradient(
+    85.5deg,
+    rgba(238, 2, 139, 1) 5.66%,
+    rgba(174, 41, 255, 1) 99.14%
+  ) !important;
+  box-shadow: 2px 1000px 1px #101014 inset !important;
+  background-origin: border-box !important;
+}
+
+/**
+Styling for version pop-up box
+*/
+[data-color-mode="dark"] .tippy-box .Menu.Menu_light {
+  background-image: linear-gradient(
+    85.5deg,
+    rgba(238, 2, 139, 0.4) 5.66%,
+    rgba(174, 41, 255, 0.4) 99.14%
+  );
+  box-shadow: 2px 1000px 1px #101014 inset;
+  background-origin: border-box;
+  border: solid 2px transparent;
+}
+
+/**
 Styling the API ref parameters table, playground, request examples, and response.
 */
 
