@@ -1,7 +1,15 @@
+/**
+Styling the entire site
+*/
+
 body {
   --container-lg: 1536px !important;
   --hub-playground-width: 530px !important;
 }
+
+/**
+Styling darkmode globals
+*/
 
 [data-color-mode="dark"] body {
   --color-bg-page: #1c1c20 !important;
@@ -10,6 +18,10 @@ body {
   --color-input-border: #101014 !important;
   --color-input-border-hover: #1c1c20 !important;
 }
+
+/**
+Styling the API ref parameters table, playground, request examples, and response.
+*/
 
 [data-color-mode="dark"] .rm-APILogInfo {
   --APILogInfo-bg: #101014 !important;
@@ -58,11 +70,63 @@ body {
   color: #00e878 !important;
 }
 
+/** 
+Styling sidebar links.
+*/
+
 [data-color-mode="dark"] .rm-Sidebar a.active {
   color: #ef4ea2 !important;
   background: none !important;
 }
 
+/** 
+Styling search background.
+*/
+
 [data-color-mode="dark"] #AppSearch {
   --AlgoliaSearch-background: 16, 16, 20 !important;
+}
+
+/** 
+Styling code-blocks in the reference and inline code everywhere.
+*/
+
+[data-color-mode="dark"] .App .rm-SuggestedEdits,
+[data-color-mode="dark"] .App .rm-SuggestionDiff,
+[data-color-mode="dark"] .App .rm-Guides,
+[data-color-mode="dark"] .App .rm-ReferenceMain,
+[data-color-mode="dark"] .App .rm-Changelog,
+[data-color-mode="dark"] .App .rm-Discuss,
+[data-color-mode="dark"] .App .rm-CustomPage {
+  --md-code-background: #101014 !important;
+  --md-code-tabs: transparent !important;
+}
+
+[data-color-mode="dark"] *:not(pre) > code {
+  border: 1px solid #2c2c33 !important;
+}
+
+[data-color-mode="dark"] .CodeTabs-inner pre {
+  border-radius: 5px !important;
+}
+
+[data-color-mode="dark"] .CodeTabs-toolbar {
+  margin-left: 5px !important;
+}
+
+[data-color-mode="dark"]
+  .CodeTabs.CodeTabs_initial
+  .CodeTabs-toolbar
+  button:first-child,
+[data-color-mode="dark"] .CodeTabs-toolbar button.CodeTabs_active {
+  background-image: linear-gradient(85.5deg, #ee028b 5.66%, #ae29ff 99.14%);
+  box-shadow: 2px 1000px 1px #101014 inset;
+}
+
+[data-color-mode="dark"] .CodeTabs-toolbar button {
+  min-width: 90px;
+  padding-left: 16px;
+  padding-right: 16px;
+  background-origin: border-box;
+  border-bottom: solid 2px transparent;
 }
