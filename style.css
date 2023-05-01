@@ -119,14 +119,18 @@ Styling code-blocks in the reference and inline code everywhere.
   .CodeTabs-toolbar
   button:first-child,
 [data-color-mode="dark"] .CodeTabs-toolbar button.CodeTabs_active {
-  background-image: linear-gradient(85.5deg, #ee028b 5.66%, #ae29ff 99.14%);
-  box-shadow: 2px 1000px 1px #101014 inset;
+  background-image: linear-gradient(
+    85.5deg,
+    #ee028b 5.66%,
+    #ae29ff 99.14%
+  ) !important;
+  box-shadow: 2px 1000px 1px #101014 inset !important;
 }
 
 [data-color-mode="dark"] .CodeTabs-toolbar button {
-  min-width: 90px;
-  padding-left: 16px;
-  padding-right: 16px;
-  background-origin: border-box;
-  border-bottom: solid 2px transparent;
+  min-width: 90px !important;
+  padding-left: 16px !important;
+  padding-right: 16px !important;
+  background-origin: border-box !important;
+  border-bottom: solid 2px transparent !important;
 }
