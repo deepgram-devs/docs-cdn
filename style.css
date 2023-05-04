@@ -17,10 +17,11 @@ Styling darkmode globals
 }
 
 [data-color-mode="dark"] body {
+  --color-text-default: #ededf2 !important;
   --color-bg-page: #1c1c20 !important;
   --color-bg-page-rgb: #1c1c20 !important;
   --color-input-background: #000000 !important;
-  --color-input-border: #101014 !important;
+  --color-input-border: var(--md-code-background) !important;
   --color-input-border-hover: #1c1c20 !important;
 }
 
@@ -49,7 +50,7 @@ Resets for "header-bottom" nav.
   border-radius: 0px !important;
   background-color: transparent !important;
   outline: 0px !important;
-  box-shadow: 2px 1000px 1px #101014 inset !important;
+  box-shadow: 2px 1000px 1px var(--md-code-background) inset !important;
   padding: 16px !important;
 }
 
@@ -69,7 +70,7 @@ Styling for "header-bottom" nav.
     rgba(238, 2, 139, 1) 5.66%,
     rgba(174, 41, 255, 1) 99.14%
   ) !important;
-  box-shadow: 2px 1000px 1px #101014 inset !important;
+  box-shadow: 2px 1000px 1px var(--md-code-background) inset !important;
   background-origin: border-box !important;
 }
 
@@ -82,7 +83,7 @@ Styling for version pop-up box
     rgba(238, 2, 139, 0.4) 5.66%,
     rgba(174, 41, 255, 0.4) 99.14%
   );
-  box-shadow: 2px 1000px 1px #101014 inset;
+  box-shadow: 2px 1000px 1px var(--md-code-background) inset;
   background-origin: border-box;
   border: solid 2px transparent;
 }
@@ -105,7 +106,7 @@ Styling for glossary item and pop-up box
     rgba(238, 2, 139, 0.4) 5.66%,
     rgba(174, 41, 255, 0.4) 99.14%
   );
-  box-shadow: 2px 1000px 1px #101014 inset;
+  box-shadow: 2px 1000px 1px var(--md-code-background) inset;
   background-origin: border-box;
   border: solid 2px transparent;
 }
@@ -115,40 +116,40 @@ Styling the API ref parameters table, playground, request examples, and response
 */
 
 [data-color-mode="dark"] .rm-APILogInfo {
-  --APILogInfo-bg: #101014 !important;
+  --APILogInfo-bg: var(--md-code-background) !important;
 }
 
 [data-color-mode="dark"] .rm-APILogsTable {
-  --APILogsTable-bg: #101014 !important;
+  --APILogsTable-bg: var(--md-code-background) !important;
 }
 
 [data-color-mode="dark"] .InputGroup {
-  --APIAuthInputGroup-bg: #101014 !important;
+  --APIAuthInputGroup-bg: var(--md-code-background) !important;
 }
 
 [data-color-mode="dark"] .rm-PlaygroundRequest {
-  --APIRequest-bg: #101014 !important;
+  --APIRequest-bg: var(--md-code-background) !important;
 }
 
 [data-color-mode="dark"]
   .rm-PlaygroundRequest
   .CodeSnippet
   .CodeMirror-gutters {
-  background: #101014 !important;
+  background: var(--md-code-background) !important;
 }
 
 [data-color-mode="dark"] .rm-PlaygroundResponse {
-  --APIResponse-bg: #101014 !important;
+  --APIResponse-bg: var(--md-code-background) !important;
 }
 
 [data-color-mode="dark"] .rm-ParamContainer {
-  --ParamContainer-bg: #101014 !important;
-  --ParamContainer-bg-alt: #101014 !important;
+  --ParamContainer-bg: var(--md-code-background) !important;
+  --ParamContainer-bg-alt: var(--md-code-background) !important;
 }
 
 [data-color-mode="dark"] .rm-APIResponseSchemaPicker {
-  --APIResponseSchemaPicker-bg: #101014 !important;
-  --APIResponseSchemaPicker-bg-alt: #101014 !important;
+  --APIResponseSchemaPicker-bg: var(--md-code-background) !important;
+  --APIResponseSchemaPicker-bg-alt: var(--md-code-background) !important;
   --APIResponseSchemaPicker-bg-hover: #1c1c20 !important;
 }
 
@@ -211,7 +212,7 @@ Styling code-blocks in the reference and inline code everywhere.
     #ee028b 5.66%,
     #ae29ff 99.14%
   ) !important;
-  box-shadow: 3px 1000px 1px #101014 inset !important;
+  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
 }
 
 [data-color-mode="dark"] .CodeTabs-toolbar button {
@@ -225,43 +226,69 @@ Styling code-blocks in the reference and inline code everywhere.
 /**
 Callout styling
 */
+
+.markdown-body .callout {
+  --text: var(--color-text-default);
+}
+
 .markdown-body .callout.callout_default {
-  --title: #ededf2;
-  --background: #101014;
-  --text: #ededf2;
-  background-origin: border-box !important;
-  border-left: solid 3px transparent !important;
-  background-image: linear-gradient(2.23deg, #201cff -19.1%, #13ef95 84.06%);
-  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
+  --background: var(--md-code-background);
+  --border: var(--color-text-default);
+  --title: var(--color-text-default);
 }
 
 .markdown-body .callout.callout_info {
   --title: #1c6fd6;
   --background: #1c2d44;
   --border: #1c6fd6;
+
+  --emoji: unset;
+  --icon: "\f05a";
+  --icon-color: var(--color-text-default);
 }
 
 .markdown-body .callout.callout_okay {
   --title: #00e878;
   --background: #00e87810;
   --border: #00e878;
+
+  --emoji: unset;
+  --icon: "\f058";
+  --icon-color: var(--color-text-default);
 }
 
 .markdown-body .callout.callout_warn {
   --title: #fdb022;
   --background: #fdb02210;
   --border: #fdb022;
+
+  --emoji: unset;
+  --icon: "\f071";
+  --icon-color: var(--color-text-default);
 }
 
 .markdown-body .callout.callout_error {
   --title: #f97066;
   --background: #f9706610;
   --border: #f97066;
+
+  --emoji: unset;
+  --icon: "\f057";
+  --icon-color: var(--color-text-default);
+}
+
+.markdown-body .callout[theme="🌐"] {
+  background-origin: border-box !important;
+  border-left: solid 3px transparent !important;
+  background-image: linear-gradient(2.23deg, #201cff -19.1%, #13ef95 84.06%);
+  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
+
+  --emoji: unset;
+  --icon: "\f0ac";
+  --icon-color: var(--color-text-default);
 }
 
 .markdown-body .callout[theme="🌈"] {
-  --emoji: unset;
-  --title: var(--color-text-default);
   background-origin: border-box !important;
   border: solid 3px transparent !important;
   background-image: linear-gradient(
@@ -271,52 +298,6 @@ Callout styling
     rgba(56, 237, 172, 1) 100%
   ) !important;
   box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
-}
 
-/**
-Callout styling
-*/
-
-.markdown-body .callout.callout_default {
-  --title: #a9a9ad;
-  --background: #a9a9ad10;
-  --border: #a9a9ad;
-}
-
-.markdown-body .callout.callout_info {
-  --title: #028cee;
-  --background: #028cee10;
-  --border: #028cee;
-}
-
-.markdown-body .callout.callout_okay {
-  --title: #6ce9a6;
-  --background: #6ce9a610;
-  --border: #6ce9a6;
-}
-
-.markdown-body .callout.callout_warn {
-  --title: #fdb022;
-  --background: #fdb02210;
-  --border: #fdb022;
-}
-
-.markdown-body .callout.callout_error {
-  --title: #f97066;
-  --background: #f9706610;
-  --border: #f97066;
-}
-
-.markdown-body .callout[theme="🌈"] {
   --emoji: unset;
-  --title: var(--color-text-default);
-  background-origin: border-box !important;
-  border: solid 3px transparent !important;
-  background-image: linear-gradient(
-    85.5deg,
-    rgba(251, 54, 64, 1) 0%,
-    rgba(93, 111, 208, 1) 50%,
-    rgba(56, 237, 172, 1) 100%
-  ) !important;
-  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
 }
