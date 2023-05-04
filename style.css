@@ -7,6 +7,10 @@ body {
   --hub-playground-width: 530px !important;
 }
 
+[data-color-mode="dark"] .content-body a {
+  color: #81f4b4 !important;
+}
+
 /**
 Styling darkmode globals
 */
@@ -78,6 +82,29 @@ Styling for version pop-up box
 }
 
 /**
+Styling for glossary item and pop-up box
+*/
+[data-color-mode="dark"] .GlossaryItem-trigger {
+  border-bottom: 2px solid #ef4ea2;
+  border-style: dashed;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+[data-color-mode="dark"] .GlossaryItem-tooltip-content {
+  background-image: linear-gradient(
+    85.5deg,
+    rgba(238, 2, 139, 0.4) 5.66%,
+    rgba(174, 41, 255, 0.4) 99.14%
+  );
+  box-shadow: 2px 1000px 1px #101014 inset;
+  background-origin: border-box;
+  border: solid 2px transparent;
+}
+
+/**
 Styling the API ref parameters table, playground, request examples, and response.
 */
 
@@ -122,10 +149,6 @@ Styling the API ref parameters table, playground, request examples, and response
 [data-color-mode="dark"] .rm-Guides_loading {
   --Spinner-element: #1c1c20 !important;
   --Spinner-ring: #00e878 !important;
-}
-
-[data-color-mode="dark"] .content-body a {
-  color: #00e878 !important;
 }
 
 /** 
