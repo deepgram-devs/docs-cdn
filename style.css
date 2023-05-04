@@ -211,7 +211,7 @@ Styling code-blocks in the reference and inline code everywhere.
     #ee028b 5.66%,
     #ae29ff 99.14%
   ) !important;
-  box-shadow: 2px 1000px 1px #101014 inset !important;
+  box-shadow: 3px 1000px 1px #101014 inset !important;
 }
 
 [data-color-mode="dark"] .CodeTabs-toolbar button {
@@ -219,7 +219,7 @@ Styling code-blocks in the reference and inline code everywhere.
   padding-left: 16px !important;
   padding-right: 16px !important;
   background-origin: border-box !important;
-  border-bottom: solid 2px transparent !important;
+  border-bottom: solid 3px transparent !important;
 }
 
 /**
