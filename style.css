@@ -5,10 +5,7 @@ Styling the entire site
 body {
   --container-lg: 1536px !important;
   --hub-playground-width: 530px !important;
-}
-
-[data-color-mode="dark"] .content-body a {
-  color: #81f4b4 !important;
+  --markdown-title-marginTop: 1.5em !important;
 }
 
 /**
@@ -25,6 +22,15 @@ Styling darkmode globals
   --color-input-background: #000000 !important;
   --color-input-border: #101014 !important;
   --color-input-border-hover: #1c1c20 !important;
+}
+
+/**
+Styling the darkmode site
+*/
+
+[data-color-mode="dark"] .markdown-body a,
+[data-color-mode="dark"] .content-body a {
+  color: #81f4b4 !important;
 }
 
 /**
@@ -214,4 +220,99 @@ Styling code-blocks in the reference and inline code everywhere.
   padding-right: 16px !important;
   background-origin: border-box !important;
   border-bottom: solid 2px transparent !important;
+}
+
+/**
+Callout styling
+*/
+.markdown-body .callout.callout_default {
+  --title: #a9a9ad;
+  --background: #a9a9ad10;
+  --border: #a9a9ad;
+}
+
+.markdown-body .callout.callout_info {
+  --title: #028cee;
+  --background: #028cee10;
+  --border: #028cee;
+}
+
+.markdown-body .callout.callout_okay {
+  --title: #00e878;
+  --background: #00e87810;
+  --border: #00e878;
+}
+
+.markdown-body .callout.callout_warn {
+  --title: #fdb022;
+  --background: #fdb02210;
+  --border: #fdb022;
+}
+
+.markdown-body .callout.callout_error {
+  --title: #f97066;
+  --background: #f9706610;
+  --border: #f97066;
+}
+
+.markdown-body .callout[theme="🌈"] {
+  --emoji: unset;
+  --title: var(--color-text-default);
+  background-origin: border-box !important;
+  border: solid 3px transparent !important;
+  background-image: linear-gradient(
+    85.5deg,
+    rgba(251, 54, 64, 1) 0%,
+    rgba(93, 111, 208, 1) 50%,
+    rgba(56, 237, 172, 1) 100%
+  ) !important;
+  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
+}
+
+/**
+Callout styling
+*/
+
+.markdown-body .callout.callout_default {
+  --title: #a9a9ad;
+  --background: #a9a9ad10;
+  --border: #a9a9ad;
+}
+
+.markdown-body .callout.callout_info {
+  --title: #028cee;
+  --background: #028cee10;
+  --border: #028cee;
+}
+
+.markdown-body .callout.callout_okay {
+  --title: #6ce9a6;
+  --background: #6ce9a610;
+  --border: #6ce9a6;
+}
+
+.markdown-body .callout.callout_warn {
+  --title: #fdb022;
+  --background: #fdb02210;
+  --border: #fdb022;
+}
+
+.markdown-body .callout.callout_error {
+  --title: #f97066;
+  --background: #f9706610;
+  --border: #f97066;
+}
+
+.markdown-body .callout[theme="🌈"] {
+  --emoji: unset;
+  --title: var(--color-text-default);
+  background-origin: border-box !important;
+  border: solid 3px transparent !important;
+  background-image: linear-gradient(
+    85.5deg,
+    rgba(251, 54, 64, 1) 0%,
+    rgba(93, 111, 208, 1) 50%,
+    rgba(56, 237, 172, 1) 100%
+  ) !important;
+  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
 }
