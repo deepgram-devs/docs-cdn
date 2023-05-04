@@ -50,7 +50,7 @@ Resets for "header-bottom" nav.
   border-radius: 0px !important;
   background-color: transparent !important;
   outline: 0px !important;
-  box-shadow: 2px 1000px 1px var(--md-code-background) inset !important;
+  box-shadow: 2px 1000px 1px #101014 inset !important;
   padding: 16px !important;
 }
 
@@ -70,7 +70,7 @@ Styling for "header-bottom" nav.
     rgba(238, 2, 139, 1) 5.66%,
     rgba(174, 41, 255, 1) 99.14%
   ) !important;
-  box-shadow: 2px 1000px 1px var(--md-code-background) inset !important;
+  box-shadow: 2px 1000px 1px #101014 inset !important;
   background-origin: border-box !important;
 }
 
@@ -83,7 +83,7 @@ Styling for version pop-up box
     rgba(238, 2, 139, 0.4) 5.66%,
     rgba(174, 41, 255, 0.4) 99.14%
   );
-  box-shadow: 2px 1000px 1px var(--md-code-background) inset;
+  box-shadow: 2px 1000px 1px #101014 inset;
   background-origin: border-box;
   border: solid 2px transparent;
 }
@@ -106,7 +106,7 @@ Styling for glossary item and pop-up box
     rgba(238, 2, 139, 0.4) 5.66%,
     rgba(174, 41, 255, 0.4) 99.14%
   );
-  box-shadow: 2px 1000px 1px var(--md-code-background) inset;
+  box-shadow: 2px 1000px 1px #101014 inset;
   background-origin: border-box;
   border: solid 2px transparent;
 }
@@ -212,7 +212,7 @@ Styling code-blocks in the reference and inline code everywhere.
     #ee028b 5.66%,
     #ae29ff 99.14%
   ) !important;
-  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
+  box-shadow: 3px 1000px 1px #101014 inset !important;
 }
 
 [data-color-mode="dark"] .CodeTabs-toolbar button {
@@ -281,7 +281,7 @@ Callout styling
   background-origin: border-box !important;
   border-left: solid 3px transparent !important;
   background-image: linear-gradient(2.23deg, #201cff -19.1%, #13ef95 84.06%);
-  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
+  box-shadow: 3px 1000px 1px #101014 inset !important;
 
   --emoji: unset;
   --icon: "\f0ac";
@@ -297,7 +297,7 @@ Callout styling
     rgba(93, 111, 208, 1) 50%,
     rgba(56, 237, 172, 1) 100%
   ) !important;
-  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
+  box-shadow: 3px 1000px 1px #101014 inset !important;
 
   --emoji: unset;
 }
