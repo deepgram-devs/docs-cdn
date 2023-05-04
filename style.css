@@ -226,15 +226,19 @@ Styling code-blocks in the reference and inline code everywhere.
 Callout styling
 */
 .markdown-body .callout.callout_default {
-  --title: #a9a9ad;
-  --background: #a9a9ad10;
-  --border: #a9a9ad;
+  --title: #ededf2;
+  --background: #101014;
+  --text: #ededf2;
+  background-origin: border-box !important;
+  border-left: solid 3px transparent !important;
+  background-image: linear-gradient(2.23deg, #201cff -19.1%, #13ef95 84.06%);
+  box-shadow: 3px 1000px 1px var(--md-code-background) inset !important;
 }
 
 .markdown-body .callout.callout_info {
-  --title: #028cee;
-  --background: #028cee10;
-  --border: #028cee;
+  --title: #1c6fd6;
+  --background: #1c2d44;
+  --border: #1c6fd6;
 }
 
 .markdown-body .callout.callout_okay {
