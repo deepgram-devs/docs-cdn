@@ -18,6 +18,7 @@ Styling darkmode globals
 
 [data-color-mode="dark"] body {
   --color-text-default: #ededf2 !important;
+  --color-link-default: #81f4b4 !important;
   --color-bg-page: #1c1c20 !important;
   --color-bg-page-rgb: #1c1c20 !important;
   --color-input-background: #000000 !important;
@@ -29,9 +30,63 @@ Styling darkmode globals
 Styling the darkmode site
 */
 
-[data-color-mode="dark"] .markdown-body a,
-[data-color-mode="dark"] .content-body a {
-  color: #81f4b4 !important;
+[data-color-mode="dark"] .App .rm-SuggestedEdits .markdown-body a,
+[data-color-mode="dark"] .App .rm-SuggestedEdits .content-body a,
+[data-color-mode="dark"] .App .rm-SuggestionDiff .markdown-body a,
+[data-color-mode="dark"] .App .rm-SuggestionDiff .content-body a,
+[data-color-mode="dark"] .App .rm-Guides .markdown-body a,
+[data-color-mode="dark"] .App .rm-Guides .content-body a,
+[data-color-mode="dark"] .App .rm-ReferenceMain .markdown-body a,
+[data-color-mode="dark"] .App .rm-ReferenceMain .content-body a,
+[data-color-mode="dark"] .App .rm-Changelog .markdown-body a,
+[data-color-mode="dark"] .App .rm-Changelog .content-body a,
+[data-color-mode="dark"] .App .rm-Discuss .markdown-body a,
+[data-color-mode="dark"] .App .rm-Discuss .content-body a,
+[data-color-mode="dark"] .App .rm-CustomPage .markdown-body a,
+[data-color-mode="dark"] .App .rm-CustomPage .content-body a {
+  color: var(--color-link-default);
+}
+
+/**
+External links
+*/
+
+a[target="_blank"]:not(:has(i))::after,
+a[to*="https://"]::after
+{
+  speak: never;
+  font-style: normal;
+  font-weight: 400;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin-left: 8px;
+  font-size: 0.8em;
+  opacity: 0.6;
+  font-family: "Font Awesome 6 Pro";
+  content: "\f08e";
+}
+
+/**
+DG classes
+*/
+
+[data-color-mode="dark"] .App .rdmd-html span.dg-badge,
+[data-color-mode="dark"] .App .rdmd-html a.dg-badge {
+  border: 2px solid #2c2c33;
+  background: var(--md-code-background);
+  color: var(--color-text-default);
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 8px;
 }
 
 /**
@@ -176,7 +231,7 @@ Styling search background.
 }
 
 /** 
-Styling code-blocks in the reference and inline code everywhere.
+Styling code-blocks and tables in the reference and inline code everywhere.
 */
 
 [data-color-mode="dark"] .App .rm-SuggestedEdits,
@@ -188,6 +243,9 @@ Styling code-blocks in the reference and inline code everywhere.
 [data-color-mode="dark"] .App .rm-CustomPage {
   --md-code-background: #101014 !important;
   --md-code-tabs: transparent !important;
+  --table-edges: #3a4348 !important;
+  --table-head: var(--md-code-background) !important;
+  --table-stripe: var(--md-code-background) !important;
 }
 
 [data-color-mode="dark"] *:not(pre) > code {
