@@ -250,6 +250,7 @@ Styling code-blocks and tables in the reference and inline code everywhere.
 
 [data-color-mode="dark"] *:not(pre) > code {
   border: 1px solid #2c2c33 !important;
+  color: #fef0c7;
 }
 
 [data-color-mode="dark"] .CodeTabs-inner pre {
@@ -358,4 +359,67 @@ Callout styling
   box-shadow: 3px 1000px 1px #101014 inset !important;
 
   --emoji: unset;
+}
+
+/**
+HTTP request types
+*/
+
+body .APIMethod_post,
+body .APIMethod_cnnct {
+  background: #1c6fd6;
+  text-shadow: 1px 1px 0 #1c6fd680, 0 1px 0 #1c6fd680, 1px 0 0 #1c6fd680;
+}
+
+body .APIMethod_error,
+body .APIMethod_delete {
+  background: #f04438;
+  text-shadow: 1px 1px 0 #f0443880, 0 1px 0 #f0443880, 1px 0 0 #f0443880;
+}
+
+body .APIMethod_deprecated {
+  background: #88888c;
+  text-shadow: 1px 1px 0 #88888c80, 0 1px 0 #88888c80, 1px 0 0 #88888c80;
+}
+
+body .APIMethod_rqbdy,
+body .APIMethod_rspns,
+body .APIMethod_descr {
+  background: #616165;
+  text-shadow: 1px 1px 0 #61616580, 0 1px 0 #61616580, 1px 0 0 #61616580;
+}
+
+body .APIMethod_fn {
+  background: #dd0070;
+  text-shadow: 1px 1px 0 #dd007080, 0 1px 0 #dd007080, 1px 0 0 #dd007080;
+}
+
+body .APIMethod_head {
+  background: #4e4e52;
+  text-shadow: 1px 1px 0 #4e4e5280, 0 1px 0 #4e4e5280, 1px 0 0 #4e4e5280;
+}
+
+body .APIMethod_get {
+  background: #00bb49;
+  text-shadow: 1px 1px 0 #00bb4980, 0 1px 0 #00bb4980, 1px 0 0 #00bb4980;
+}
+
+body .APIMethod_link {
+  background: #12b76a;
+  text-shadow: 1px 1px 0 #12b76a80, 0 1px 0 #12b76a80, 1px 0 0 #12b76a80;
+}
+
+body .APIMethod_optns {
+  background: #fdb022;
+  text-shadow: 1px 1px 0 #fdb02280, 0 1px 0 #fdb02280, 1px 0 0 #fdb02280;
+}
+
+body .APIMethod_patch {
+  background: #f97066;
+  text-shadow: 1px 1px 0 #f9706680, 0 1px 0 #f9706680, 1px 0 0 #f9706680;
+}
+
+body .APIMethod_put {
+  background: #9936f7;
+  text-shadow: 1px 1px 0 #9936f780, 0 1px 0 #9936f780, 1px 0 0 #9936f780;
 }
