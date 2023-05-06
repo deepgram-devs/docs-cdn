@@ -2,10 +2,27 @@
 Styling the entire site
 */
 
+@font-face {
+  font-family: "ABCFavorit-Bold";
+  src: url("./ABCFavorit-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
 body {
-  --container-lg: 1536px !important;
-  --hub-playground-width: 530px !important;
-  --markdown-title-marginTop: 1.5em !important;
+  --font-family: "Inter", Helvetica Neue, sans-serif;
+  --container-lg: 1536px;
+  --hub-playground-width: 530px;
+  --markdown-title-marginTop: 1.5em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ABCFavorit-Bold", sans-serif;
 }
 
 /**
@@ -101,11 +118,11 @@ Resets for "header-bottom" nav.
 [data-color-mode="dark"] .rm-Header-bottom-link:active,
 [data-color-mode="dark"] .rm-Header-bottom-link {
   border: 0px solid transparent !important;
-  border-bottom: solid 2px transparent !important;
+  border-bottom: solid 3px transparent !important;
   border-radius: 0px !important;
   background-color: transparent !important;
   outline: 0px !important;
-  box-shadow: 2px 1000px 1px #101014 inset !important;
+  box-shadow: 3px 1000px 1px #101014 inset !important;
   padding: 16px !important;
 }
 
@@ -125,7 +142,7 @@ Styling for "header-bottom" nav.
     rgba(238, 2, 139, 1) 5.66%,
     rgba(174, 41, 255, 1) 99.14%
   ) !important;
-  box-shadow: 2px 1000px 1px #101014 inset !important;
+  box-shadow: 3px 1000px 1px #101014 inset !important;
   background-origin: border-box !important;
 }
 
