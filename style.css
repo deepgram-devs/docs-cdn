@@ -234,9 +234,18 @@ Styling the API ref parameters table, playground, request examples, and response
 Styling sidebar links.
 */
 
-[data-color-mode="dark"] .rm-Sidebar a.active {
-  color: #ef4ea2 !important;
-  background: none !important;
+[data-color-mode="dark"] body .rm-Sidebar a:hover,
+[data-color-mode="dark"] body .rm-Sidebar a:focus {
+  background: none;
+}
+
+[data-color-mode="dark"] body .rm-Sidebar a.active {
+  color: #ef4ea2;
+  background: none;
+}
+
+[data-color-mode="dark"] body a.rm-Sidebar-link:hover {
+  color: #81f4b4;
 }
 
 /** 
@@ -382,61 +391,82 @@ Callout styling
 HTTP request types
 */
 
+body .APIMethod_fixedWidth {
+  width: 55px;
+}
+
+body .APIMethod {
+  border-radius: calc(var(--border-radius) * 2.5);
+  height: auto;
+  padding: 2px;
+}
+
 body .APIMethod_post,
 body .APIMethod_cnnct {
-  background: #1c6fd6;
-  text-shadow: 1px 1px 0 #1c6fd680, 0 1px 0 #1c6fd680, 1px 0 0 #1c6fd680;
+  background: #1c2d44;
+  border: 2px solid #1c6fd6;
+  text-shadow: none;
 }
 
 body .APIMethod_error,
 body .APIMethod_delete {
-  background: #f04438;
-  text-shadow: 1px 1px 0 #f0443880, 0 1px 0 #f0443880, 1px 0 0 #f0443880;
+  background: #43211e;
+  border: 2px solid #d92d20;
+  text-shadow: none;
 }
 
 body .APIMethod_deprecated {
-  background: #88888c;
-  text-shadow: 1px 1px 0 #88888c80, 0 1px 0 #88888c80, 1px 0 0 #88888c80;
+  background: #88888c80;
+  border: 2px solid #88888c;
+  text-shadow: none;
 }
 
 body .APIMethod_rqbdy,
 body .APIMethod_rspns,
 body .APIMethod_descr {
-  background: #616165;
-  text-shadow: 1px 1px 0 #61616580, 0 1px 0 #61616580, 1px 0 0 #61616580;
+  background: #61616580;
+  border: 2px solid #616165;
+  text-shadow: none;
 }
 
 body .APIMethod_fn {
-  background: #dd0070;
-  text-shadow: 1px 1px 0 #dd007080, 0 1px 0 #dd007080, 1px 0 0 #dd007080;
+  background: #dd007080;
+  border: 2px solid #dd0070;
+  text-shadow: none;
 }
 
 body .APIMethod_head {
-  background: #4e4e52;
-  text-shadow: 1px 1px 0 #4e4e5280, 0 1px 0 #4e4e5280, 1px 0 0 #4e4e5280;
+  background: #4e4e5280;
+  border: 2px solid #4e4e52;
+  text-shadow: none;
 }
 
 body .APIMethod_get {
-  background: #00bb49;
-  text-shadow: 1px 1px 0 #00bb4980, 0 1px 0 #00bb4980, 1px 0 0 #00bb4980;
+  background: #184129;
+  border: 2px solid #00cf56;
+  text-shadow: none;
 }
 
 body .APIMethod_link {
-  background: #12b76a;
-  text-shadow: 1px 1px 0 #12b76a80, 0 1px 0 #12b76a80, 1px 0 0 #12b76a80;
+  background: #12b76a80;
+  border: 2px solid #12b76a;
+  text-shadow: none;
 }
 
 body .APIMethod_optns {
-  background: #fdb022;
-  text-shadow: 1px 1px 0 #fdb02280, 0 1px 0 #fdb02280, 1px 0 0 #fdb02280;
+  background: #fdb02280;
+  border: 2px solid #fdb022;
+  text-shadow: none;
 }
 
 body .APIMethod_patch {
-  background: #f97066;
-  text-shadow: 1px 1px 0 #f9706680, 0 1px 0 #f9706680, 1px 0 0 #f9706680;
+  background: #442d19;
+  border: 2px solid #dc6803;
+  text-shadow: none;
 }
 
 body .APIMethod_put {
-  background: #9936f7;
-  text-shadow: 1px 1px 0 #9936f780, 0 1px 0 #9936f780, 1px 0 0 #9936f780;
+  background: #301847;
+  border: 2px solid #7800ed;
+  text-shadow: none;
 }
