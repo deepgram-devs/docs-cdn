@@ -6,7 +6,7 @@
   "display": "browser",
   "orientation": "",
   "scope": "/",
-  "start_url": "/",
+  "start_url": "https://developers.beta.deepgram.com",
   "icons": [
     {
       "src": "/icon-72x72.png",
