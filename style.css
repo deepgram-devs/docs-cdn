@@ -106,6 +106,30 @@ DG classes
   border-radius: 8px;
 }
 
+[data-color-mode="dark"] .starter-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+}
+
+[data-color-mode="dark"] .starter-card {
+  display: block;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #2c2c33;
+  background: var(--md-code-background);
+  color: var(--color-text-default);
+  padding: 8px 16px;
+  text-decoration: none !important;
+  border-radius: 8px;
+}
+
+[data-color-mode="dark"] .starter-card:hover {
+  border: 2px solid var(--color-link-default);
+}
+
 /**
 Resets for "header-bottom" nav.
 */
