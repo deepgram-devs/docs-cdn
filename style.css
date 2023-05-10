@@ -463,10 +463,9 @@ Callout styling
   background-origin: border-box !important;
   border: solid 3px transparent !important;
   background-image: linear-gradient(
-    85.5deg,
-    rgba(251, 54, 64, 1) 0%,
-    rgba(93, 111, 208, 1) 50%,
-    rgba(56, 237, 172, 1) 100%
+    82.38deg,
+    #ff2eea -99.24%,
+    #4b3cff 99.26%
   ) !important;
   box-shadow: 3px 1000px 1px #101014 inset !important;
 
