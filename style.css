@@ -366,11 +366,19 @@ Styling code-blocks and tables in the reference and inline code everywhere.
 }
 
 [data-color-mode="dark"] .CodeTabs-inner pre {
-  border-radius: 5px !important;
+  border-top-left-radius: 0px !important;
+  border-bottom-left-radius: 5px !important;
+  border-bottom-right-radius: 5px !important;
 }
 
 [data-color-mode="dark"] .CodeTabs-toolbar {
-  margin-left: 5px !important;
+  align-items: center;
+  background-color: #28282B;
+  justify-content: start;
+}
+
+[data-color-mode="dark"] .CodeTabs-toolbar button {
+  padding-top: 0.6em;
 }
 
 [data-color-mode="dark"]
