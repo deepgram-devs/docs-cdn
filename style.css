@@ -25,8 +25,16 @@ h6 {
   font-family: "ABCFavorit-Bold", sans-serif;
 }
 
-.App .rdmd-html {
+body .App .rdmd-html {
   margin-bottom: 26px !important;
+}
+
+body .rm-Sidebar-list .rm-Sidebar-link {
+  font-size: 15px;
+}
+
+body .App .rm-Guides {
+  --markdown-font-size: 16px;
 }
 
 /**
@@ -373,7 +381,7 @@ Styling code-blocks and tables in the reference and inline code everywhere.
 
 [data-color-mode="dark"] .CodeTabs-toolbar {
   align-items: center;
-  background-color: #28282B;
+  background-color: #28282b;
   justify-content: start;
 }
 
