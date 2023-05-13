@@ -33,7 +33,9 @@ body .rm-Sidebar-list .rm-Sidebar-link {
   font-size: 15px;
 }
 
-body .App .rm-Guides {
+body .App .rm-Guides,
+body .App .rm-ReferenceMain,
+body .App .rm-CustomPage {
   --markdown-font-size: 16px;
 }
 
