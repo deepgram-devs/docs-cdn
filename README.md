@@ -4,7 +4,7 @@ This repository is to act as CDN via jsdeliver for the doc sites remote styleshe
 
 ## Docs Site
 
-The docs site is currently viewable in preview at https://api-beta-deepgram.readme.io/
+The docs site is currently viewable in preview at https://developers.beta.deepgram.com.
 
 ## CSS
 
