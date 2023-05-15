@@ -87,7 +87,7 @@ Styling the darkmode site
 External links
 */
 
-a[target="_blank"]:not(:has(i))::after,
+a[target="_blank"]:not(.rm-Sidebar-link)::after,
 a[to*="https://"]::after
 {
   speak: never;
