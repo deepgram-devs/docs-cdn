@@ -1,11 +1,3 @@
-window.onload = function () {
-  // Initial page changes.
-  launchChanges();
-
-  // Register for mutations, and make further changes as DOM manipulation occurs.
-  registerObserver();
-};
-
 /**
  * make top-nav external links target="_blank"
  */
@@ -19,16 +11,6 @@ function convertHttpLinkstoExternal() {
 }
 
 /**
- * Changes once the page has initialized.
- */
-function launchChanges() {
-  convertHttpLinkstoExternal();
-  excludePlayergroundFromAnalytics();
-  registerObserver();
-  console.clear();
-}
-
-/**
  * Exclude the playground from fullstory.
  */
 function excludePlayergroundFromAnalytics() {
@@ -37,14 +19,6 @@ function excludePlayergroundFromAnalytics() {
     playground.classList.add("fs-exclude");
     playground.setAttribute("data-heap-redact-text", "");
   }
-}
-
-/**
- * Changes that run when #Explorer mutations are observed.
- */
-function observableChanges() {
-  convertHttpLinkstoExternal();
-  excludePlayergroundFromAnalytics();
 }
 
 function registerObserver() {
@@ -75,3 +49,29 @@ function registerObserver() {
    */
   observer.observe(targetNode, config);
 }
+
+/**
+ * Changes once the page has initialized.
+ */
+function launchChanges() {
+  convertHttpLinkstoExternal();
+  excludePlayergroundFromAnalytics();
+  registerObserver();
+  console.clear();
+}
+
+/**
+ * Changes that run when #Explorer mutations are observed.
+ */
+function observableChanges() {
+  convertHttpLinkstoExternal();
+  excludePlayergroundFromAnalytics();
+}
+
+window.onload = function () {
+  // Initial page changes.
+  launchChanges();
+
+  // Register for mutations, and make further changes as DOM manipulation occurs.
+  registerObserver();
+};
