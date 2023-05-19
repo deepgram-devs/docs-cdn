@@ -7,6 +7,13 @@ window.onload = function () {
     el.target = "_blank";
   });
 
+  // exclude the playground from fullstory
+  var playground = document.getElementById("ReferencePlayground");
+  if (playground) {
+    playground.classList.add("fs-exclude");
+    playground.setAttribute("data-heap-redact-text", "");
+  }
+
   // clear console of readme marketing
   console.clear();
 };
