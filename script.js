@@ -21,33 +21,39 @@ function excludePlayergroundFromAnalytics() {
   }
 }
 
-function registerObserver() {
+/**
+ * Registers a MutationObserver to the first object with the specified value of the ID attribute.
+ * @param {string} elementId String that specifies the ID value.
+ */
+function registerObserverById(elementId) {
   /**
-   * Get #Explorer, the main body for readme
+   * Get element to observe
    */
-  const targetNode = document.getElementById("Explorer");
+  const targetNode = document.getElementById(elementId);
 
-  /**
-   * Options for the observer (which mutations to observe).
-   */
-  const config = { childList: true, subtree: true };
+  if (targetNode) {
+    /**
+     * Options for the observer (which mutations to observe).
+     */
+    const config = { childList: true, subtree: true };
 
-  /**
-   * Callback function to execute when mutations are observed.
-   */
-  const callback = () => {
-    observableChanges();
-  };
+    /**
+     * Callback function to execute when mutations are observed.
+     */
+    const callback = () => {
+      observableChanges();
+    };
 
-  /**
-   * Create an observer instance linked to the callback function.
-   */
-  const observer = new MutationObserver(callback);
+    /**
+     * Create an observer instance linked to the callback function.
+     */
+    const observer = new MutationObserver(callback);
 
-  /**
-   * Start observing the target node for configured mutations.
-   */
-  observer.observe(targetNode, config);
+    /**
+     * Start observing the target node for configured mutations.
+     */
+    observer.observe(targetNode, config);
+  }
 }
 
 /**
@@ -56,7 +62,6 @@ function registerObserver() {
 function launchChanges() {
   convertHttpLinkstoExternal();
   excludePlayergroundFromAnalytics();
-  registerObserver();
   console.clear();
 }
 
@@ -71,7 +76,5 @@ function observableChanges() {
 window.onload = function () {
   // Initial page changes.
   launchChanges();
-
-  // Register for mutations, and make further changes as DOM manipulation occurs.
-  registerObserver();
+  registerObserverById("ssr-main"); // body by ID
 };
