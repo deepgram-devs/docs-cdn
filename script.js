@@ -21,6 +21,65 @@ function excludePlayergroundFromAnalytics() {
   }
 }
 
+var ctActiveButtonClass = "CodeTabs_active";
+var ctBlockQuery = ".CodeTabs .CodeTabs-inner pre";
+var ctButtonQuery = ".CodeTabs .CodeTabs-toolbar button";
+var ctActiveItemQuery = ".CodeTabs ." + ctActiveButtonClass;
+var ctStorageKey = "defaultCode";
+
+function resetDefaultCodeBlocks() {
+  for (const codeBlock of document.querySelectorAll(".CodeTabs_initial")) {
+    codeBlock.classList.remove("CodeTabs_initial");
+  }
+}
+
+function getCtDefaults() {
+  var ctUserLanguage = localStorage.getItem(ctStorageKey);
+
+  if (!ctUserLanguage) {
+    ctUserLanguage = document.querySelector(ctButtonQuery).textContent;
+  }
+
+  return ctUserLanguage;
+}
+
+function activateCtBlock(button) {
+  const toolbar = button.parentNode;
+  const index = Array.prototype.indexOf.call(toolbar.children, button);
+  const block = toolbar.parentNode;
+  const relatedCode = block.querySelectorAll(ctBlockQuery)[index];
+
+  relatedCode.classList.add(ctActiveButtonClass);
+}
+
+function syncCtLanguages(language) {
+  if (!language) {
+    language = getCtDefaults();
+  }
+
+  for (const element of document.querySelectorAll(ctActiveItemQuery)) {
+    element.classList.remove(ctActiveButtonClass);
+  }
+
+  for (const button of document.querySelectorAll(ctButtonQuery)) {
+    if (button.textContent.includes(language)) {
+      button.classList.add(ctActiveButtonClass);
+
+      activateCtBlock(button);
+    }
+  }
+}
+
+function registerCtButtonEvents() {
+  for (const button of document.querySelectorAll(ctButtonQuery)) {
+    button.addEventListener("click", function (el) {
+      localStorage.setItem(ctStorageKey, el.currentTarget.textContent);
+
+      syncCtLanguages(el.currentTarget.textContent);
+    });
+  }
+}
+
 /**
  * Registers a MutationObserver to the first object with the specified value of the ID attribute.
  * @param {string} elementId String that specifies the ID value.
@@ -62,6 +121,9 @@ function registerObserverById(elementId) {
 function launchChanges() {
   convertHttpLinkstoExternal();
   excludePlayergroundFromAnalytics();
+  resetDefaultCodeBlocks();
+  syncCtLanguages();
+  registerCtButtonEvents();
   console.clear();
 }
 
@@ -71,6 +133,9 @@ function launchChanges() {
 function observableChanges() {
   convertHttpLinkstoExternal();
   excludePlayergroundFromAnalytics();
+  resetDefaultCodeBlocks();
+  syncCtLanguages();
+  registerCtButtonEvents();
 }
 
 window.onload = function () {
