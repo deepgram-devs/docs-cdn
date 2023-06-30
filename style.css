@@ -255,6 +255,14 @@ DG classes
 }
 
 /**
+Override for "header-top" search button position.
+*/
+
+.rm-Header .rm-Header-top .rm-Container div:last-child {
+	flex-direction: row-reverse;
+}
+
+/**
 Resets for "header-bottom" nav.
 */
 
