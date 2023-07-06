@@ -657,3 +657,27 @@ body .rm-Sidebar-link[href="/reference/streaming"]::after {
   white-space: nowrap;
   width: 40px;
 }
+
+/* AI Bot Overrides */
+
+[data-color-mode="dark"] .tippy-box div[class*="ChatGPT"]  {
+  background-image: none !important;
+  box-shadow: 2px 10000px 1px #101014 inset !important;
+  --md-code-background: #101014 !important;
+}
+
+[data-color-mode="dark"] .tippy-box div[class*="ChatGPT"] .CodeTabs-toolbar button {
+  color: #ededf2 !important;
+}
+
+[data-color-mode="dark"] .tippy-box div[class*="ChatGPT"] .CodeTabs .CodeTabs-inner pre code {
+  color: #676e95 !important;
+}
+
+[data-color-mode="dark"] .tippy-box div[class*="ChatGPT"] a {
+  color: #ceced2 !important;
+}
+
+[data-color-mode="dark"] .tippy-box div[class*="ChatGPT"] a:hover {
+  color: #fbfbff !important;
+}
