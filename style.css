@@ -687,3 +687,15 @@ Enlarged image background
 span.lightbox-inner {
     background-color: #000;
 }
+
+/** 
+Make inputs visible on api docs
+*/
+.rm-ParamContainer .Input {
+    word-break: normal;
+    border: 1px solid #505050;
+}
+
+.rm-ParamContainer .Select {
+    border: 1px solid #505050;
+}
