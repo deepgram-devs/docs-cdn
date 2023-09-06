@@ -681,7 +681,9 @@ body .rm-Sidebar-link[href="/reference/streaming"]::after {
 [data-color-mode="dark"] .tippy-box div[class*="ChatGPT"] a:hover {
   color: #fbfbff !important;
 }
-
+/** 
+Enlarged image background
+*/
 span.lightbox-inner {
     background-color: #000;
 }
