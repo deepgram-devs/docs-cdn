@@ -692,7 +692,6 @@ span.lightbox-inner {
 Make inputs visible on api docs
 */
 .rm-ParamContainer .Input {
-    word-break: normal;
     border: 1px solid #505050;
 }
 
