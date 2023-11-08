@@ -234,8 +234,8 @@ DG classes
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 10px;
-  grid-row-gap: 10px;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
 }
 
 [data-color-mode="dark"] .starter-card {
@@ -245,7 +245,7 @@ DG classes
   border: 2px solid var(--dg-dark-gray);
   background: var(--md-code-background);
   color: var(--color-text-default);
-  padding: 8px 16px;
+  padding: 1.5rem;
   text-decoration: none !important;
   border-radius: 8px;
 }
