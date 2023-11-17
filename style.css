@@ -205,7 +205,12 @@ DG classes
 .App .rdmd-html span.dg-badge.language,
 .App .rdmd-html a.dg-badge.language {
   background-image: linear-gradient(85deg, #EE028B 5.66%, #AE29FF 99.14%);
-  content: "\f0ac";
+}
+
+.App .rdmd-html span.dg-badge.language::before,
+.App .rdmd-html a.dg-badge.language::before {
+  content: "\f1ab";
+  font-weight: 900;
 }
 
 .App .rdmd-html span.dg-badge.unavailable,
