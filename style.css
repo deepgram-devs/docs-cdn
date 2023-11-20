@@ -182,7 +182,8 @@ DG classes
 .App .rdmd-html span.dg-badge.live::before,
 .App .rdmd-html a.dg-badge.live::before,
 .App .rdmd-html span.dg-badge.prerecorded::before,
-.App .rdmd-html a.dg-badge.prerecorded::before {
+.App .rdmd-html a.dg-badge.prerecorded::before,
+.App .rdmd-html a.dg-badge.language::before {
   margin-right: 8px;
 }
 
