@@ -494,56 +494,62 @@ Callout styling
 
 .markdown-body .callout.callout_default {
   --background: var(--md-code-background);
-  --border: var(--color-text-default);
   --title: var(--color-text-default);
+  border: solid var(--color-text-default);
+  border-width: 1px 1px 1px 3px;
+  border-radius: 4px;
 }
 
 .markdown-body .callout.callout_info {
-  --title: #1c6fd6;
+  --title: #149AFB;
   --background: #1c2d44;
-  --border: #1c6fd6;
-
   --emoji: unset;
   --icon: "\f05a";
   --icon-color: var(--color-text-default);
+  border: solid #149AFB;
+  border-width: 1px 1px 1px 3px;
+  border-radius: 4px;
 }
 
 .markdown-body .callout.callout_okay {
   --title: #00e878;
   --background: #00e87810;
-  --border: #00e878;
-
   --emoji: unset;
   --icon: "\f058";
   --icon-color: var(--color-text-default);
+  border: solid #00e878;
+  border-width: 1px 1px 1px 3px;
+  border-radius: 4px;
 }
 
 .markdown-body .callout.callout_warn {
   --title: #fdb022;
   --background: #fdb02210;
-  --border: #fdb022;
-
   --emoji: unset;
   --icon: "\f071";
   --icon-color: var(--color-text-default);
+  border: solid #fdb022;
+  border-width: 1px 1px 1px 3px;
+  border-radius: 4px;
 }
 
 .markdown-body .callout.callout_error {
   --title: #f97066;
   --background: #f9706610;
-  --border: #f97066;
-
   --emoji: unset;
   --icon: "\f057";
   --icon-color: var(--color-text-default);
+  border: solid #f97066;
+  border-width: 1px 1px 1px 3px;
+  border-radius: 4px;
 }
 
 .markdown-body .callout[theme="🌐"] {
   background-origin: border-box;
+  border: solid #1c1c20;
   border-left: solid 0.25em transparent;
   background-image: linear-gradient(2.23deg, #201cff -19.1%, #13ef95 84.06%);
   box-shadow: 0.25em 1000px 1px #101014 inset;
-
   --emoji: unset;
   --icon: "\f0ac";
   --icon-color: var(--color-text-default);
