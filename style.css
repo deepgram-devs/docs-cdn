@@ -278,6 +278,16 @@ DG classes
   border: 2px solid var(--color-link-default);
 }
 
+/** 
+Styling sidebar links.
+*/
+
+[data-color-mode="dark"] body .rm-Sidebar-header {
+  color: #B2D1FC;
+}
+
+
+
 /**
 Override for "header-top" search button position.
 */
