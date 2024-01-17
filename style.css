@@ -156,7 +156,7 @@ DG classes
 .App .rdmd-html span.dg-badge,
 .App .rdmd-html a.dg-badge {
   margin-right: 6px;
-  color: var(--color-text-default);
+  color: #BBBBBF !important;
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 8px;
