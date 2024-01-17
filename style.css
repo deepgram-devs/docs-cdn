@@ -430,7 +430,7 @@ Styling sidebar links.
 }
 
 [data-color-mode="dark"] body .rm-Sidebar a.active {
-  color: #ef4ea2;
+  color: var(--color-link-default);
   background: none;
 }
 
