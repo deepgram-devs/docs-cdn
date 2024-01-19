@@ -75,7 +75,7 @@ Styling darkmode globals
 
 [data-color-mode="dark"] body {
   --color-text-default: #ededf2;
-  --color-link-default: #ceced2;
+  --color-link-default: #79AFFA;
   --color-bg-page: #1c1c20;
   --color-bg-page-rgb: #1c1c20;
   --color-input-background: #000000;
@@ -156,7 +156,7 @@ DG classes
 .App .rdmd-html span.dg-badge,
 .App .rdmd-html a.dg-badge {
   margin-right: 6px;
-  color: var(--color-text-default);
+  color: #BBBBBF !important;
   padding: 8px 16px;
   text-decoration: none;
   border-radius: 8px;
@@ -277,6 +277,16 @@ DG classes
 [data-color-mode="dark"] .starter-card:hover {
   border: 2px solid var(--color-link-default);
 }
+
+/** 
+Styling sidebar links.
+*/
+
+[data-color-mode="dark"] body .rm-Sidebar-heading {
+  color: #B2D1FC;
+}
+
+
 
 /**
 Override for "header-top" search button position.
@@ -420,7 +430,7 @@ Styling sidebar links.
 }
 
 [data-color-mode="dark"] body .rm-Sidebar a.active {
-  color: #ef4ea2;
+  color: var(--color-link-default);
   background: none;
 }
 
