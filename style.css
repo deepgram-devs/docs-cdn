@@ -282,7 +282,7 @@ DG classes
 Styling sidebar links.
 */
 
-[data-color-mode="dark"] body .rm-Sidebar-header {
+[data-color-mode="dark"] body .rm-Sidebar-heading {
   color: #B2D1FC;
 }
 
