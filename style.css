@@ -386,7 +386,7 @@ Styling the API ref parameters table, playground, request examples, and response
   --Spinner-ring: #00e878 !important;
 }
 
-/** 
+/**
 Styling sidebar links.
 */
 
@@ -404,7 +404,7 @@ Styling sidebar links.
   color: var(--color-link-default);
 }
 
-/** 
+/**
 Styling search background.
 */
 
@@ -412,7 +412,7 @@ Styling search background.
   --AlgoliaSearch-background: 16, 16, 20 !important;
 }
 
-/** 
+/**
 Styling code-blocks and tables in the reference and inline code everywhere.
 */
 
@@ -538,6 +538,19 @@ Callout styling
 }
 
 .markdown-body .callout[theme="🌈"] {
+  background-origin: border-box;
+  border: 0.125em solid transparent;
+  background-image: linear-gradient(
+    82.38deg,
+    #ff2eea -99.24%,
+    #4b3cff 99.26%
+  ) !important;
+  box-shadow: 0.125em 1000px 1px #101014 inset;
+
+  --emoji: unset;
+}
+
+.markdown-body .callout[theme="🛝"] {
   background-origin: border-box;
   border: 0.125em solid transparent;
   background-image: linear-gradient(
