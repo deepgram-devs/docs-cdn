@@ -259,7 +259,7 @@ Override for "header-top" search button position.
 */
 
 .rm-Header .rm-Header-top .rm-Container div:last-child {
-	flex-direction: row-reverse;
+  flex-direction: row-reverse;
 }
 
 /**
@@ -560,18 +560,19 @@ Callout styling
   ) !important;
   box-shadow: 0.125em 1000px 1px #101014 inset;
 
---icon: url('https://res.cloudinary.com/deepgram/image/upload/v1717523786/devex/codey-greeting_rekqe1.svg');
+  --icon: url("https://res.cloudinary.com/deepgram/image/upload/v1717523786/devex/codey-greeting_rekqe1.svg");
 
   --emoji: unset;
 }
 
-.callout.callout .callout-heading.empty > .callout-icon{
-		float: left;
-    margin-top: .5rem;
-    margin-right: 1.75rem;
-  	margin-left: .15rem;
-    transform: scaleX(-1);
+.callout.callout .callout-heading.empty > .callout-icon {
+  float: left;
+  margin-top: 0.5rem;
+  margin-right: 1.75rem;
+  margin-left: 0.15rem;
+  transform: scaleX(-1);
 }
+
 /**
 HTTP request types
 */
