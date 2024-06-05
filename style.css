@@ -599,9 +599,7 @@ Callout styling
     #4b3cff 99.26%
   ) !important;
   box-shadow: 0.125em 1000px 1px #101014 inset;
-
   --icon: url("https://res.cloudinary.com/deepgram/image/upload/v1717523786/devex/codey-greeting_rekqe1.svg");
-
   --emoji: unset;
 }
 
@@ -611,6 +609,10 @@ Callout styling
   margin-right: 1.75rem;
   margin-left: 0.15rem;
   transform: scaleX(-1);
+}
+
+.callout.callout .callout-heading.empty > .callout-icon::before {
+  top: -7px;
 }
 
 /**
@@ -748,16 +750,16 @@ body .rm-Sidebar-link[href="/reference/streaming"]::after {
 Enlarged image background
 */
 span.lightbox-inner {
-    background-color: #000;
+  background-color: #000;
 }
 
 /** 
 Make inputs visible on api docs
 */
 .rm-ParamContainer .Input {
-    border: 1px solid #505050;
+  border: 1px solid #505050;
 }
 
 .rm-ParamContainer .Select {
-    border: 1px solid #505050;
+  border: 1px solid #505050;
 }
