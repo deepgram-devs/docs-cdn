@@ -467,6 +467,7 @@ Styling code-blocks and tables in the reference and inline code everywhere.
 [data-color-mode="dark"] *:not(pre) > code {
   border: 1px solid #2c2c33 !important;
   color: #fef0c7;
+  background: #101014;
 }
 
 [data-color-mode="dark"] .CodeTabs-inner pre {
