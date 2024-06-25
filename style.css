@@ -591,6 +591,11 @@ Callout styling
   --emoji: unset;
 }
 
+.markdown-body .callout[theme="🌈"] > .callout-heading.empty {
+  float: none;
+  margin-top:0;
+}
+
 .markdown-body .callout[theme="🛝"] {
   background-origin: border-box;
   border: 0.125em solid transparent;
