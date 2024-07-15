@@ -517,10 +517,6 @@ Callout styling
   margin-left: calc(1.75rem + 1.5rem);
 }
 
-.markdown-body .callout.callout .callout-heading {
-  margin-left: calc(1.75rem + 1.5rem);
-}
-
 .markdown-body .callout.callout_default {
   --background: var(--md-code-background);
   --title: var(--color-text-default);
