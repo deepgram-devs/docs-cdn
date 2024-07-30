@@ -183,6 +183,10 @@ DG classes
 .App .rdmd-html a.dg-badge.live::before,
 .App .rdmd-html span.dg-badge.prerecorded::before,
 .App .rdmd-html a.dg-badge.prerecorded::before,
+.App .rdmd-html span.dg-badge.tts::before,
+.App .rdmd-html a.dg-badge.tts::before,
+.App .rdmd-html span.dg-badge.agent::before,
+.App .rdmd-html a.dg-badge.agent::before,
 .App .rdmd-html a.dg-badge.language::before {
   margin-right: 8px;
 }
@@ -196,6 +200,16 @@ DG classes
 .App .rdmd-html span.dg-badge.live::before,
 .App .rdmd-html a.dg-badge.live::before {
   content: "\f8f2";
+}
+
+.App .rdmd-html span.dg-badge.tts::before,
+.App .rdmd-html a.dg-badge.tts::before {
+  content: "\f675";
+}
+
+.App .rdmd-html span.dg-badge.agent::before,
+.App .rdmd-html a.dg-badge.agent::before {
+  content: "\f590";
 }
 
 .App .rdmd-html span.dg-badge.beta,
@@ -278,7 +292,7 @@ DG classes
   border: 2px solid var(--color-link-default);
 }
 
-/** 
+/**
 Styling sidebar links.
 */
 
@@ -764,14 +778,14 @@ body .rm-Sidebar-link[href="/reference/streaming"]::after {
 [data-color-mode="dark"] .tippy-box div[class*="ChatGPT"] a:hover {
   color: #fbfbff !important;
 }
-/** 
+/**
 Enlarged image background
 */
 span.lightbox-inner {
   background-color: #000;
 }
 
-/** 
+/**
 Make inputs visible on api docs
 */
 .rm-ParamContainer .Input {
