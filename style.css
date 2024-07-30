@@ -205,11 +205,13 @@ DG classes
 .App .rdmd-html span.dg-badge.tts::before,
 .App .rdmd-html a.dg-badge.tts::before {
   content: "\f675";
+  font-weight: 900;
 }
 
 .App .rdmd-html span.dg-badge.agent::before,
 .App .rdmd-html a.dg-badge.agent::before {
   content: "\f590";
+  font-weight: 900;
 }
 
 .App .rdmd-html span.dg-badge.beta,
