@@ -797,3 +797,34 @@ Make inputs visible on api docs
 .rm-ParamContainer .Select {
   border: 1px solid #505050;
 }
+
+/**
+ * Add markdown table styling for API references
+ */
+.markdown-body.content-body .rdmd-table {
+  background: var(--md-code-background);
+  border: var(--border-width) solid var(--color-border-default);
+  overflow: hidden;
+  border-radius: var(--border-radius-lg);
+  font-size: 14px;
+  padding: 6px 0;
+}
+
+.markdown-body.content-body .rdmd-table .rdmd-table-inner,
+.markdown-body.content-body .rdmd-table .rdmd-table-inner table,
+.markdown-body.content-body .rdmd-table .rdmd-table-inner table td, 
+.markdown-body.content-body .rdmd-table .rdmd-table-inner table th,
+.markdown-body.content-body .rdmd-table .rdmd-table-inner table tr,
+.markdown-body.content-body .rdmd-table .rdmd-table-inner table tr+tr {
+  background: none;
+  border: none;
+}
+
+.markdown-body.content-body .rdmd-table .rdmd-table-inner table {
+	border: 0;
+}
+
+.markdown-body.content-body .rdmd-table .rdmd-table-inner table td,
+.markdown-body.content-body .rdmd-table .rdmd-table-inner table tr:not(:first-child) {
+  border-top: var(--border-width) solid var(--color-border-default);
+}
