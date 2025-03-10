@@ -1,3 +1,5 @@
+> This repo is now archived. For all Deepgram Docs CSS and styles see https://github.com/deepgram/deepgram-docs
+
 # Docs CDN
 
 This repository is to act as CDN for the doc sites remote stylesheets and scripts.
